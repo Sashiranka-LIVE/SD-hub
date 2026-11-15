@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD HUB — Sashiranka Develogenz</title>
+<meta name="description" content="The Sashiranka Develogenz brand and document studio. Create invoices, proposals, agreements and more, from browser to print.">
+<link rel="icon" href="assets/sd-signature.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    
+    
+    
+    
+    
+
+<link rel="stylesheet" href="studio.css">
+</head>
+
+<body class="antialiased">
+
+    <a class="skip-link" href="#templates">Skip to document studio</a>
+    <nav class="studio-nav print:hidden" aria-label="Main navigation">
+      <a class="studio-brand" href="#home"><img src="assets/sd-signature.png" alt="SD signature"><span>SD HUB<small>SASHIRANKA DEVELOGENZ</small></span></a>
+      <div class="studio-links"><a href="#identity">01 / IDENTITY</a><a href="#data">02 / PRACTICE</a><a href="#templates">03 / DOCUMENTS</a></div>
+      <a class="portfolio-link" href="https://sashiranka.me" target="_blank" rel="noopener">PORTFOLIO ↗</a>
+    </nav>
+    <main id="home" class="studio-main">
+      <header class="studio-hero print:hidden">
+        <img class="hero-art" src="assets/hero-poster.webp" alt="" fetchpriority="high">
+        <div class="hero-shade"></div>
+        <div class="hero-top mono"><span><i class="live-dot"></i> THE INDEPENDENT STUDIO</span><span>COLOMBO, LK / <span id="colombo-time">+05:30</span></span></div>
+        <div class="hero-content"><p class="eyebrow">BRAND SYSTEM & DOCUMENT WORKSPACE</p><h1>MAKE IT.<br><em>then</em> <span>PRINT IT</span><b>.</b></h1>
+        <p class="hero-description">One identity. Every touchpoint.<br>Your brand assets and business documents,<br>crafted from browser to print.</p>
+        <div class="hero-actions"><a href="#templates" class="button-red">Open document studio <span>↗</span></a><a href="#identity" class="text-link">Explore the identity ↓</a></div></div>
+        <div class="hero-note mono"><span>BUILT FOR</span><strong>WEB · SOFTWARE<br>BUSINESS TOOLS</strong><hr><span>DESIGNED BY</span><strong>SASHIRANKA<br>DEVELOGENZ</strong></div>
+        <div class="hero-bottom mono"><span><i class="cmyk"></i> SD / STUDIO SYSTEM 01</span><span>05 TEMPLATES · ONE SIGNATURE</span></div>
+      </header>
+      <div class="quick-grid print:hidden"><a href="#identity"><span class="mono">01 / THE SIGNATURE</span><strong>A mark of your own.</strong><p>Logo, colour and social assets.</p><b>↗</b></a><a href="#templates"><span class="mono">02 / THE WORKSPACE</span><strong>Good work. On paper.</strong><p>Five editable document formats.</p><b>↗</b></a><a href="https://sashiranka.me/#work" target="_blank" rel="noopener"><span class="mono">03 / THE PRACTICE</span><strong>From idea to live.</strong><p>Explore the portfolio and selected work.</p><b>↗</b></a></div>
+      <section id="scene" class="scene print:hidden" aria-label="Interactive 3D tour of the five document formats">
+        <div class="scene-sticky">
+          <div class="scene-copy">
+            <p class="eyebrow">SCROLL TOUR / 5 DOCUMENTS</p>
+            <h2>Five formats.<br><em>One scroll.</em></h2>
+            <h3 id="scene-name" class="scene-name">Invoice</h3>
+            <p id="scene-desc" class="scene-desc" aria-live="polite">Line items, tax and totals in LKR. Every field is editable, add as many services as you need, then export to PDF.</p>
+            <div class="scene-meta mono"><span id="scene-count">01 / 05</span><i class="scene-bar" aria-hidden="true"><b></b></i></div>
+            <div class="scene-controls">
+              <button id="scene-prev" type="button" aria-label="Previous document">←</button>
+              <button id="scene-next" type="button" aria-label="Next document">→</button>
+              <button id="scene-open" type="button" class="button-red">Open in studio <span>↗</span></button>
+            </div>
+            <p class="scene-hint mono">SCROLL TO FLIP · MOVE THE MOUSE TO TILT · CLICK A SHEET TO OPEN</p>
+          </div>
+          <div class="scene-stage" id="scene-stage">
+            <div class="scene-world" id="scene-world">
+              <div class="scene-floor" id="scene-floor" aria-hidden="true"></div>
+          <button class="scene-card" type="button" data-doc="invoice-preview" data-name="Invoice" data-desc="Line items, tax and totals in LKR. Every field is editable, add as many services as you need, then export to PDF." data-kind="invoice"><span class="sc-bar"><img src="assets/sd-signature.png" alt=""><b>INVOICE</b><em>#INV-2026-001</em></span><span class="sc-body"><span class="row"><i class="ln " style="--w:34%"></i><i class="ln " style="--w:18%"></i></span><span class="rule"></span><span class="row"><i class="ln " style="--w:42%"></i><i class="ln " style="--w:10%"></i><i class="ln " style="--w:16%"></i></span><span class="row"><i class="ln " style="--w:36%"></i><i class="ln " style="--w:10%"></i><i class="ln " style="--w:18%"></i></span><span class="rule"></span><span class="total"><i class="ln lt" style="--w:30%"></i><i class="ln lt" style="--w:34%"></i></span></span><span class="sheen"></span></button>
+          <button class="scene-card" type="button" data-doc="proposal-preview" data-name="Proposal" data-desc="Client details, a scoped task list and signature blocks, ready for the first conversation." data-kind="proposal"><span class="sc-bar"><img src="assets/sd-signature.png" alt=""><b>PROPOSAL</b><em>SD-PROP-2026</em></span><span class="sc-body"><span class="box"><i class="ln " style="--w:40%"></i><i class="ln " style="--w:28%"></i></span><i class="ln h" style="--w:58%"></i><i class="ln " style="--w:90%"></i><i class="ln " style="--w:82%"></i><span class="rule red"></span><span class="row"><i class="ln " style="--w:60%"></i><i class="ln " style="--w:14%"></i></span><span class="row"><i class="ln " style="--w:52%"></i><i class="ln " style="--w:14%"></i></span><span class="row"><i class="ln " style="--w:56%"></i><i class="ln " style="--w:14%"></i></span><span class="sigs"><u></u><u></u><u></u></span></span><span class="sheen"></span></button>
+          <button class="scene-card" type="button" data-doc="agreement-preview" data-name="Agreement" data-desc="A Master Services Agreement with numbered clauses you can add and edit before it is signed." data-kind="agreement"><span class="sc-bar"><img src="assets/sd-signature.png" alt=""><b>AGREEMENT</b><em>STANDARD FORM</em></span><span class="sc-body serif"><span class="ttl"><i class="ln h" style="--w:52%"></i></span><i class="ln " style="--w:94%"></i><i class="ln " style="--w:96%"></i><i class="ln " style="--w:88%"></i><i class="ln " style="--w:92%"></i><i class="ln " style="--w:60%"></i><i class="ln h" style="--w:30%"></i><i class="ln " style="--w:95%"></i><i class="ln " style="--w:90%"></i><i class="ln " style="--w:70%"></i><i class="ln h" style="--w:30%"></i><i class="ln " style="--w:92%"></i><i class="ln " style="--w:96%"></i><i class="ln " style="--w:50%"></i><span class="sigs two"><u></u><u></u></span></span><span class="sheen"></span></button>
+          <button class="scene-card" type="button" data-doc="digital-preview" data-name="Email &amp; SMS" data-desc="Branded email and SMS mockups, editable in place, for the updates in between." data-kind="digital"><span class="sc-bar slim"><img src="assets/sd-signature.png" alt=""><b>EMAIL + SMS</b><em>DIGITAL</em></span><span class="sc-body"><i class="ln h" style="--w:60%"></i><i class="ln " style="--w:90%"></i><i class="ln " style="--w:96%"></i><i class="ln " style="--w:70%"></i><span class="btn"></span><i class="ln " style="--w:40%"></i><span class="phone"><span class="bub l"></span><span class="bub r"></span></span></span><span class="sheen"></span></button>
+          <button class="scene-card" type="button" data-doc="agenda-preview" data-name="Meeting Agenda" data-desc="Time, topic and owner for every item, so the meeting starts with a plan." data-kind="agenda"><span class="sc-bar"><img src="assets/sd-signature.png" alt=""><b>AGENDA</b><em>05/03/2026</em></span><span class="sc-body"><span class="head"><i class="ln h" style="--w:48%"></i></span><i class="ln " style="--w:88%"></i><i class="ln " style="--w:64%"></i><span class="thead"></span><span class="row"><i class="ln " style="--w:10%"></i><i class="ln " style="--w:50%"></i><i class="ln " style="--w:20%"></i></span><span class="row"><i class="ln " style="--w:10%"></i><i class="ln " style="--w:44%"></i><i class="ln " style="--w:20%"></i></span><span class="row"><i class="ln " style="--w:10%"></i><i class="ln " style="--w:56%"></i><i class="ln " style="--w:20%"></i></span></span><span class="sheen"></span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="identity" class="brand-section print:hidden">
+        <div class="section-intro"><div><p class="eyebrow">01 / VISUAL IDENTITY</p><h2>Distinctly <em>SD.</em></h2></div><p>The signature stays personal. The system stays consistent.<br>A compact toolkit for everything you put your name on.</p></div>
+        <div class="identity-grid"><div id="logo-concepts-card" class="signature-card"><div class="asset-top mono"><span>FIG. 01 / THE SIGNATURE</span><button id="btn-download-logos">↓ Export PNG</button></div><img src="assets/sd-signature.png" alt="Sashiranka Develogenz handwritten SD signature"><div class="asset-bottom"><strong>SASHIRANKA DEVELOGENZ</strong><span class="mono">INDEPENDENT BY DESIGN.</span></div></div>
+        <div class="palette-card"><p class="eyebrow">THE PRINT PALETTE</p><h3>Ink. Paper.<br>A little signal.</h3><div class="palette"><button class="swatch-container" data-color="#0F0E0C" aria-label="Copy Ink colour #0F0E0C"><i style="background:#0F0E0C"></i><strong>Ink</strong><span>#0F0E0C</span></button><button class="swatch-container" data-color="#181613" aria-label="Copy Charcoal colour #181613"><i style="background:#181613"></i><strong>Charcoal</strong><span>#181613</span></button><button class="swatch-container" data-color="#EA3D2A" aria-label="Copy Signal colour #EA3D2A"><i style="background:#EA3D2A"></i><strong>Signal</strong><span>#EA3D2A</span></button><button class="swatch-container" data-color="#F2EDE4" aria-label="Copy Paper colour #F2EDE4"><i style="background:#F2EDE4"></i><strong>Paper</strong><span>#F2EDE4</span></button></div><p class="mono palette-hint">CLICK A SWATCH TO COPY ITS HEX CODE ↗</p><div class="type-spec"><span class="mono">Aa / ARCHIVO</span><em>Instrument Serif</em><span class="mono">01 / JETBRAINS MONO</span></div></div></div>
+        <div class="social-assets"><div class="social-label"><p class="eyebrow">READY TO REPRESENT</p><h3>Your identity,<br><em>everywhere.</em></h3><a href="assets/sd-signature.png" download="SD_Signature_Transparent.png" class="text-link">Download original signature ↗</a><a href="assets/sd-brand.jpeg" download="SD_Brand_Artwork.jpeg" class="text-link">Download brand artwork ↗</a></div><div class="avatar-wrap"><div id="social-avatar-card"><img src="assets/sd-signature.png" alt="SD social avatar"></div><button id="btn-download-avatar" class="asset-download">↓ Download avatar</button></div><div class="cover-wrap"><div id="social-cover-card"><span class="mono">SASHIRANKA DEVELOGENZ / INDEPENDENT STUDIO</span><div><img src="assets/sd-signature.png" alt="SD signature"><h3>FORM <em>to</em> PRINT<span>.</span></h3></div><span class="mono">WEB · SOFTWARE · BUSINESS TOOLS <b>SASHIRANKA.ME</b></span></div><button id="btn-download-cover" class="asset-download">↓ Download cover</button></div></div>
+      </section>
+        <!-- PORTFOLIO DATA SECTION -->
+        <section id="data" class="space-y-12 print:hidden">
+            <div class="bg-white p-8 sm:p-12 rounded-2xl shadow-sm border border-gray-100">
+                <div class="border-l-4 border-[#EA3D2A] pl-4 mb-8">
+                    <h2 class="text-3xl font-bold text-slate-900">02. The Practice</h2>
+                    <p class="text-gray-600 mt-2">Software, websites and business tools. The sample allocation below demonstrates the original portfolio chart; it is not measured business data.</p>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="w-full md:w-1/2">
+                        <div class="chart-container">
+                            <canvas id="portfolioChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 space-y-6">
+                        <h3 class="text-2xl font-bold brand-font text-slate-900">Service mix / illustrative</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            SD's operations are divided among three primary pillars. The documentation formats
+                            (invoices, proposals) must be flexible enough to accommodate the distinct billing structures
+                            and project milestones of each division.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3">
+                                <span class="text-[#0F0E0C] text-xl">&#9632;</span>
+                                <div>
+                                    <p class="font-bold text-slate-900">Software Development (45%)</p>
+                                    <p class="text-sm text-gray-500">Complex, milestone-based projects requiring
+                                        detailed technical proposals.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-[#EA3D2A] text-xl">&#9632;</span>
+                                <div>
+                                    <p class="font-bold text-slate-900">Web Development (35%)</p>
+                                    <p class="text-sm text-gray-500">Agile sprints and retainer-based billing requiring
+                                        clear, frequent invoicing.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-[#8F887B] text-xl">&#9632;</span>
+                                <div>
+                                    <p class="font-bold text-slate-900">Business Consulting (20%)</p>
+                                    <p class="text-sm text-gray-500">Hourly tracking and strategic agreements needing
+                                        strict legal formatting.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOCUMENT TEMPLATES SECTION -->
+        <section id="templates" class="space-y-8">
+            <div class="border-l-4 border-slate-900 pl-4 mb-8 print:hidden">
+                <h2 class="text-3xl font-bold text-slate-900">03. Document Studio</h2>
+                <p class="text-gray-600 mt-2">From the first proposal to the final invoice. <strong>Click document text to edit, then export to PDF. Quantities, tax and totals are edited manually.</strong><br><span class="draft-note">Sample content — replace client, payment and registration details before sending.</span></p>
+            </div>
+
+            <div
+                class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-200 mb-8 gap-4 pb-2 md:pb-0 print:hidden">
+                <div class="flex flex-wrap" id="tab-container">
+                    <button
+                        class="tab-btn px-6 py-3 text-sm font-medium text-gray-500 hover:text-slate-900 transition-colors tab-active"
+                        data-target="invoice-preview">Invoice</button>
+                    <button
+                        class="tab-btn px-6 py-3 text-sm font-medium text-gray-500 hover:text-slate-900 transition-colors"
+                        data-target="proposal-preview">Proposal</button>
+                    <button
+                        class="tab-btn px-6 py-3 text-sm font-medium text-gray-500 hover:text-slate-900 transition-colors"
+                        data-target="agreement-preview">Agreement</button>
+                    <button
+                        class="tab-btn px-6 py-3 text-sm font-medium text-gray-500 hover:text-slate-900 transition-colors"
+                        data-target="digital-preview">Email & SMS</button>
+                    <button
+                        class="tab-btn px-6 py-3 text-sm font-medium text-gray-500 hover:text-slate-900 transition-colors"
+                        data-target="agenda-preview">Meeting Agenda</button>
+                </div>
+                <button id="btn-export-doc-pdf"
+                    class="hidden md:flex items-center gap-2 bg-[#0F0E0C] hover:bg-slate-800 text-white px-5 py-2.5 rounded-md text-sm font-bold transition-colors whitespace-nowrap mb-2 md:mb-0 shadow-sm">
+                    📥 Export to PDF
+                </button>
+            </div>
+
+            <div class="workspace-tools print:hidden"><span class="mono" id="draft-status" role="status">LOCAL WORKSPACE / READY</span><div><button id="save-draft">Save draft</button><button id="restore-draft">Restore saved</button><button id="print-document">Print</button></div></div>
+            <!-- INVOICE SECTION (EDITABLE) -->
+            <div id="invoice-preview"
+                class="tab-content doc-sheet bg-white shadow-md max-w-4xl mx-auto rounded border border-gray-200">
+                <!-- TOP FULL-WIDTH EXPANDED BLACK BAR -->
+                <div class="doc-header-bar">
+                    <table class="doc-header-table" role="presentation">
+                        <tr>
+                            <td class="doc-header-cell-left">
+                                <div class="doc-header-brand-wrap">
+                                    <img src="assets/sd-signature.png" alt="Sashiranka Develogenz" class="doc-header-logo">
+                                    <div class="doc-header-meta">
+                                        <h1 class="doc-header-title" contenteditable="true">Sashiranka Develogenz</h1>
+                                        <p class="doc-header-tag" contenteditable="true">Software • Web • Consulting</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="doc-header-cell-right">
+                                <span class="doc-header-badge">OFFICIAL DOCUMENT</span>
+                                <div class="doc-header-doctype">INVOICE</div>
+                                <div class="doc-header-docnum" contenteditable="true">#INV-2026-001</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="doc-body-area w-full text-slate-900 text-sm font-sans" id="invoice-printable-area">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-5 mb-6 border-b border-gray-200 gap-4 text-xs text-gray-600">
+                        <div class="leading-relaxed">
+                            <p class="font-medium text-slate-800" contenteditable="true">Colombo, Sri Lanka · [Business address]</p>
+                            <p contenteditable="true">Email: sashirankafernando0@gmail.com | [Phone number]</p>
+                            <p contenteditable="true" class="text-gray-500 text-[11px]">Registration: [Business registration number]</p>
+                        </div>
+                        <div class="text-left sm:text-right font-mono">
+                            <p class="text-[10px] text-gray-400 uppercase tracking-widest font-sans font-bold mb-0.5">Issue Date</p>
+                            <p class="text-slate-900 font-bold text-sm" contenteditable="true">05/03/2026</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row justify-between mb-6 text-xs gap-4 sm:gap-0">
+                        <div class="w-full sm:w-1/2 sm:pr-4">
+                            <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-1">Bill To:</p>
+                            <p class="font-bold text-slate-900 text-sm" contenteditable="true">Acme Corporation</p>
+                            <p class="text-gray-600 mt-0.5" contenteditable="true">456 Corporate Blvd<br>Business
+                                District, BD 20202</p>
+                        </div>
+                        <div class="w-full sm:w-1/2 sm:pl-4">
+                            <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-1">Ship To /
+                                Project:</p>
+                            <p class="font-bold text-slate-900 text-sm" contenteditable="true">Project Phoenix</p>
+                            <p class="text-gray-600 mt-0.5" contenteditable="true">Phase 1 Cloud Migration</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full h-0.5 bg-[#EA3D2A] mb-1"></div>
+
+                    <table class="w-full text-left text-xs mb-1 table-fixed">
+                        <thead>
+                            <tr class="text-slate-900">
+                                <th class="py-1.5 font-bold uppercase tracking-wider w-1/2 pl-2">Services</th>
+                                <th class="py-1.5 font-bold uppercase tracking-wider text-center w-1/6">Packages</th>
+                                <th class="py-1.5 font-bold uppercase tracking-wider text-right w-1/6">Unit Price</th>
+                                <th class="py-1.5 font-bold uppercase tracking-wider text-right w-1/6 pr-2">Amount</th>
+                            </tr>
+                        </thead>
+                    </table>
+
+                    <div class="w-full h-0.5 bg-[#EA3D2A] mb-2"></div>
+
+                    <table class="w-full text-left text-xs mb-2 table-fixed">
+                        <tbody id="invoice-tbody" class="text-gray-700 font-medium transition-opacity duration-500">
+                            <tr class="border-b border-dashed border-gray-200 hover:bg-gray-50">
+                                <td class="py-2.5 pl-2 pr-4 w-1/2 align-top" contenteditable="true">Software Development
+                                    Services</td>
+                                <td class="py-2.5 text-center w-1/6 align-top" contenteditable="true">1</td>
+                                <td class="py-2.5 text-right w-1/6 align-top" contenteditable="true">LKR 450,000.00</td>
+                                <td class="py-2.5 pr-2 text-right text-slate-900 w-1/6 align-top font-semibold"
+                                    contenteditable="true">LKR 450,000.00</td>
+                            </tr>
+                            <tr class="border-b border-dashed border-gray-200 hover:bg-gray-50">
+                                <td class="py-2.5 pl-2 pr-4 w-1/2 align-top" contenteditable="true">Web Development &
+                                    Deployment</td>
+                                <td class="py-2.5 text-center w-1/6 align-top" contenteditable="true">40h</td>
+                                <td class="py-2.5 text-right w-1/6 align-top" contenteditable="true">LKR 15,000.00/hr
+                                </td>
+                                <td class="py-2.5 pr-2 text-right text-slate-900 w-1/6 align-top font-semibold"
+                                    contenteditable="true">LKR 600,000.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="print:hidden flex justify-start mb-4">
+                        <button id="btn-add-invoice-row"
+                            class="text-[10px] font-bold text-[#EA3D2A] hover:text-red-700 transition-colors uppercase tracking-widest flex items-center gap-1 bg-cyan-50 px-2 py-1 rounded cursor-pointer">
+                            + Add Service
+                        </button>
+                    </div>
+
+                    <div class="w-full h-0.5 bg-[#EA3D2A] mb-4"></div>
+
+                    <div class="flex flex-col sm:flex-row justify-end mb-8">
+                        <div class="w-full sm:w-72 text-sm font-medium transition-opacity duration-500"
+                            id="invoice-totals-wrapper">
+                            <div class="flex justify-between text-gray-600 px-4 py-1">
+                                <p>Subtotal</p>
+                                <p id="invoice-subtotal" contenteditable="true">LKR 1,050,000.00</p>
+                            </div>
+                            <div class="flex justify-between text-gray-600 px-4 py-1">
+                                <p>Tax (5%)</p>
+                                <p id="invoice-tax" contenteditable="true">LKR 52,500.00</p>
+                            </div>
+                            <div
+                                class="flex justify-between items-center text-base font-bold text-slate-900 bg-[#EA3D2A] p-3 mt-2 shadow-sm">
+                                <p class="uppercase tracking-widest text-[10px] font-black">Grand Total</p>
+                                <p id="invoice-total" contenteditable="true">LKR 1,102,500.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-[10px] text-gray-500 text-center pt-4 mt-6 border-t border-gray-100">
+                        <p class="mb-2 text-slate-600" contenteditable="true">Payment Terms: Due within 15 days | Bank:
+                            [Bank name], Acc: [Account number] | Thank you for choosing SD!</p>
+                        <p class="font-['Space_Grotesk'] font-bold text-[#0F0E0C] tracking-[0.3em] uppercase mt-1">
+                            Innovate • Deploy • Grow</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROPOSAL SECTION (EDITABLE) -->
+            <div id="proposal-preview"
+                class="tab-content doc-sheet hide bg-white shadow-md max-w-4xl mx-auto rounded border border-gray-200">
+                <!-- TOP FULL-WIDTH EXPANDED BLACK BAR -->
+                <div class="doc-header-bar">
+                    <table class="doc-header-table" role="presentation">
+                        <tr>
+                            <td class="doc-header-cell-left">
+                                <div class="doc-header-brand-wrap">
+                                    <img src="assets/sd-signature.png" alt="Sashiranka Develogenz" class="doc-header-logo">
+                                    <div class="doc-header-meta">
+                                        <h1 class="doc-header-title" contenteditable="true">Sashiranka Develogenz</h1>
+                                        <p class="doc-header-tag" contenteditable="true">Executive Proposal</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="doc-header-cell-right">
+                                <span class="doc-header-badge">CLIENT BRIEF</span>
+                                <div class="doc-header-doctype">PROPOSAL</div>
+                                <div class="doc-header-docnum">SD-PROP-2026</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="doc-body-area w-full text-slate-900 text-sm font-sans" id="proposal-printable-area">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-4 mb-5 border-b-2 border-[#EA3D2A] gap-2">
+                        <p class="text-xs text-[#EA3D2A] font-bold tracking-widest uppercase font-mono" contenteditable="true">
+                            Executive Corporate Business Proposal</p>
+                        <span class="text-[10px] font-mono text-gray-400 uppercase tracking-wider">Confidential &amp; Proprietary</span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row justify-between mb-5 bg-slate-50 p-5 rounded border border-gray-100 transition-opacity duration-500 gap-4 sm:gap-0"
+                        id="prop-client-container">
+                        <div>
+                            <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-1">Prepared For:
+                            </p>
+                            <p class="font-bold text-slate-900 text-lg" id="prop-client-name" contenteditable="true">
+                                [Client Name Here]</p>
+                            <p class="text-gray-700 mt-1 text-xs font-semibold" id="prop-client-rep"
+                                contenteditable="true">[Representative Name Here]</p>
+                            <p class="text-gray-500 text-xs mt-1" id="prop-client-address" contenteditable="true">
+                                [Client Address Here]</p>
+                        </div>
+                        <div class="sm:text-right">
+                            <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-1">Date:</p>
+                            <p class="font-mono text-slate-900 font-semibold" id="prop-date" contenteditable="true">
+                                05/03/2026</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-5 transition-opacity duration-500" id="prop-header-container">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-2 brand-font" id="prop-title"
+                            contenteditable="true">Digital Deployment Strategy</h2>
+                        <p class="text-gray-700 leading-relaxed text-sm" id="prop-summary" contenteditable="true">A
+                            comprehensive approach to establish brand identity, social media presence, and strategic
+                            marketing execution to ensure sustainable business growth.</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <h3
+                            class="text-sm font-bold text-[#EA3D2A] uppercase tracking-widest mb-3 border-b border-gray-200 pb-2">
+                            Deployment & Execution Tasks (Detailed Scope)</h3>
+                        <table class="w-full text-left text-sm table-fixed">
+                            <thead>
+                                <tr class="bg-slate-100 text-slate-700">
+                                    <th class="py-2 px-3 font-bold text-xs w-3/4">Deployment Activity</th>
+                                    <th class="py-2 px-3 font-bold text-xs text-right w-1/4">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="prop-tasks-tbody"
+                                class="divide-y divide-gray-100 transition-opacity duration-500">
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-2.5 px-3" contenteditable="true">Business Logo Development & Brand
+                                        Identity</td>
+                                    <td class="py-2.5 px-3 text-right font-medium text-slate-900" contenteditable="true">
+                                        Included</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-2.5 px-3" contenteditable="true">Business Card Design & Corporate
+                                        Stationery</td>
+                                    <td class="py-2.5 px-3 text-right font-medium text-slate-900" contenteditable="true">
+                                        Included</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="py-2.5 px-3" contenteditable="true">Professional Social Media Interface
+                                        Creation</td>
+                                    <td class="py-2.5 px-3 text-right font-medium text-slate-900" contenteditable="true">
+                                        Included</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="print:hidden flex justify-start mt-2">
+                            <button id="btn-add-proposal-row"
+                                class="text-[10px] font-bold text-[#EA3D2A] hover:text-red-700 transition-colors uppercase tracking-widest flex items-center gap-1 bg-cyan-50 px-2 py-1 rounded cursor-pointer">
+                                + Add Task
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mb-6 bg-slate-50 p-4 border-l-4 border-[#EA3D2A] transition-opacity duration-500"
+                        id="prop-note-container">
+                        <h4 class="font-bold text-slate-900 text-sm mb-1.5" contenteditable="true">Client Trust &
+                            Transparency Approach</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed" id="prop-approach" contenteditable="true">Each
+                            task is executed step by step with measurable milestones to ensure clarity, transparency,
+                            and professional accountability. The structured deployment process allows the client to
+                            clearly understand business growth progress and marketing impact.</p>
+                    </div>
+
+                    <div class="mb-2">
+                        <h3
+                            class="text-sm font-bold text-slate-900 uppercase tracking-widest mb-6 border-b border-gray-200 pb-2">
+                            Formal Agreement & Authorization</h3>
+                        <div class="grid grid-cols-3 gap-8">
+                            <div>
+                                <div class="border-b border-slate-400 w-full mb-2 h-7"></div>
+                                <p class="text-xs font-bold text-slate-900" contenteditable="true">Studio Lead</p>
+                                <p class="text-[10px] text-gray-500 mt-1">Signature / Date</p>
+                            </div>
+                            <div>
+                                <div class="border-b border-slate-400 w-full mb-2 h-7"></div>
+                                <p class="text-xs font-bold text-slate-900" contenteditable="true">Project Manager
+                                </p>
+                                <p class="text-[10px] text-gray-500 mt-1">Signature / Date</p>
+                            </div>
+                            <div>
+                                <div class="border-b border-slate-400 w-full mb-2 h-7"></div>
+                                <p class="text-xs font-bold text-slate-900" id="prop-sig-client" contenteditable="true">
+                                    Client Authorization</p>
+                                <p class="text-[10px] text-gray-500 mt-1">Signature / Date</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AGREEMENT SECTION (EDITABLE) -->
+            <div id="agreement-preview"
+                class="tab-content doc-sheet hide bg-white shadow-md max-w-4xl mx-auto rounded border border-gray-200 font-serif">
+                <!-- TOP FULL-WIDTH EXPANDED BLACK BAR -->
+                <div class="doc-header-bar font-sans">
+                    <table class="doc-header-table" role="presentation">
+                        <tr>
+                            <td class="doc-header-cell-left">
+                                <div class="doc-header-brand-wrap">
+                                    <img src="assets/sd-signature.png" alt="Sashiranka Develogenz" class="doc-header-logo">
+                                    <div class="doc-header-meta">
+                                        <h1 class="doc-header-title">Sashiranka Develogenz</h1>
+                                        <p class="doc-header-tag">Legal &amp; Consulting Practice</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="doc-header-cell-right">
+                                <span class="doc-header-badge">LEGAL CONTRACT</span>
+                                <div class="doc-header-doctype">AGREEMENT</div>
+                                <div class="doc-header-docnum">STANDARD FORM</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="doc-body-area">
+                    <div class="text-center mb-10 border-b-2 border-slate-900 pb-6">
+                        <h2 class="text-xl font-bold uppercase tracking-widest text-slate-900 font-sans" contenteditable="true">Master
+                            Services Agreement</h2>
+                    </div>
+                <div class="space-y-6 text-gray-700 text-sm leading-relaxed text-justify">
+                    <p contenteditable="true">This Master Services Agreement (the "Agreement") is entered into as of
+                        <strong>[Date]</strong>, by and between <strong>Sashiranka Develogenz</strong>, having its principal place of
+                        business at [Business address], ("Provider"), and <strong>[Client Name]</strong>, having its
+                        principal place of business at [Client Address] ("Client").
+                    </p>
+
+                    <div id="agreement-clauses">
+                        <div class="clause-block">
+                            <h3 class="font-bold text-slate-900 text-base mt-8" contenteditable="true">1. Services to be
+                                Performed</h3>
+                            <p class="mt-2" contenteditable="true">Provider agrees to perform the services specifically
+                                described in individual Statements of Work ("SOW") executed by both parties from time to
+                                time. Each SOW shall incorporate the terms of this Agreement.</p>
+                        </div>
+                        <div class="clause-block">
+                            <h3 class="font-bold text-slate-900 text-base mt-8" contenteditable="true">2. Compensation
+                                and Payment</h3>
+                            <p class="mt-2" contenteditable="true">Client agrees to pay Provider the fees set forth in
+                                the applicable SOW. Invoices shall be submitted [Monthly/Upon Milestone] and are due net
+                                30 days from the date of invoice. Late payments may incur interest at a rate of 1.5% per
+                                month.</p>
+                        </div>
+                    </div>
+
+                    <div class="print:hidden flex justify-start mt-6">
+                        <button id="btn-add-clause-row"
+                            class="text-[10px] font-bold text-slate-500 hover:text-slate-800 transition-colors uppercase tracking-widest flex items-center gap-1 bg-slate-100 px-2 py-1 rounded cursor-pointer">
+                            + Add Clause
+                        </button>
+                    </div>
+
+                    <div class="mt-16 pt-8 border-t border-gray-200 flex justify-between gap-12 font-sans">
+                        <div class="w-1/2">
+                            <p class="text-xs text-gray-500 uppercase mb-8" contenteditable="true">For Sashiranka Develogenz</p>
+                            <div class="border-b border-slate-900 w-full mb-2"></div>
+                            <p class="text-sm font-bold">Authorized Signature</p>
+                        </div>
+                        <div class="w-1/2">
+                            <p class="text-xs text-gray-500 uppercase mb-8" contenteditable="true">For Client</p>
+                            <div class="border-b border-slate-900 w-full mb-2"></div>
+                            <p class="text-sm font-bold">Authorized Signature</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- DIGITAL PREVIEW SECTION (EDITABLE) -->
+            <div id="digital-preview" class="tab-content hide grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gray-100 p-6 rounded-xl border border-gray-200 shadow-inner flex flex-col">
+                    <p class="text-xs text-gray-500 uppercase tracking-wider mb-4 font-semibold">Email Template Format
+                    </p>
+
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-200 flex-1">
+                        <div class="bg-[#0F0E0C] px-6 py-3.5 flex justify-between items-center border-b-2 border-[#EA3D2A]">
+                            <div class="flex items-center gap-3">
+                                <img src="assets/sd-signature.png" alt="SD" class="h-7 w-auto object-contain">
+                                <span class="text-sm font-black tracking-tight brand-font text-white uppercase">Sashiranka Develogenz</span>
+                            </div>
+                            <span class="text-[10px] font-mono text-[#EA3D2A] uppercase tracking-wider font-bold">DIGITAL</span>
+                        </div>
+                        <div class="p-6 space-y-4 text-sm text-gray-600">
+                            <p id="email-subject" class="font-bold text-slate-900" contenteditable="true">Project
+                                Update: Milestone 2 Complete</p>
+                            <p contenteditable="true">Hi Team,</p>
+                            <div id="email-body" class="space-y-4">
+                                <p contenteditable="true">We are pleased to inform you that the backend integration
+                                    phase has been successfully completed ahead of schedule. You can review the staging
+                                    environment at the provided secure link.</p>
+                                <div class="py-4">
+                                    <a href="#"
+                                        class="inline-block bg-[#EA3D2A] text-white px-6 py-2 rounded font-medium hover:bg-red-700 transition-colors"
+                                        contenteditable="true">Review Staging</a>
+                                </div>
+                            </div>
+                            <p contenteditable="true">Best regards,<br><span class="font-bold text-slate-900">The SD
+                                    Dev Team</span></p>
+                        </div>
+                        <div class="bg-gray-50 px-6 py-4 text-xs text-gray-400 text-center border-t border-gray-100 mt-auto"
+                            contenteditable="true">
+                            &copy; 2026 Sashiranka Develogenz. Confidential Information.
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gray-100 p-6 rounded-xl border border-gray-200 shadow-inner flex flex-col justify-end items-center h-full min-h-[400px]">
+                    <div class="w-full flex justify-between items-center mb-4">
+                        <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold">SMS/Notification Format
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white w-72 h-[450px] rounded-3xl shadow-xl border-8 border-slate-900 flex flex-col overflow-hidden relative">
+                        <div
+                            class="bg-gray-100 py-2 px-4 text-center text-xs font-medium text-gray-500 border-b border-gray-200">
+                            Messages</div>
+                        <div class="flex-1 bg-[#F8F9FA] p-4 flex flex-col space-y-4 overflow-y-auto"
+                            id="sms-chat-container">
+                            <div class="text-[10px] text-center text-gray-400 mt-auto">Today 9:41 AM</div>
+
+                            <div class="bg-gray-200 text-gray-800 p-3 rounded-2xl rounded-bl-sm text-sm self-start max-w-[80%]"
+                                contenteditable="true">
+                                Hi, did the proposal come through?
+                            </div>
+
+                            <div class="bg-[#0F0E0C] text-white p-3 rounded-2xl rounded-br-sm text-sm self-end max-w-[85%] shadow-sm"
+                                contenteditable="true">
+                                <div><span class="font-bold text-[#EA3D2A]">SD:</span> Yes, we received it! Our
+                                    consulting team is reviewing the SOW now. We will follow up via email by EOD.
+                                    &#128640;</div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-100 p-3 border-t border-gray-200 flex items-center">
+                            <div class="w-full bg-white border border-gray-300 rounded-full px-4 py-1 text-xs text-gray-400 text-center italic"
+                                contenteditable="true">Click bubbles to edit</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AGENDA SECTION (EDITABLE) -->
+            <div id="agenda-preview"
+                class="tab-content doc-sheet hide bg-white shadow-md max-w-4xl mx-auto rounded border border-gray-200">
+                <!-- TOP FULL-WIDTH EXPANDED BLACK BAR -->
+                <div class="doc-header-bar">
+                    <table class="doc-header-table" role="presentation">
+                        <tr>
+                            <td class="doc-header-cell-left">
+                                <div class="doc-header-brand-wrap">
+                                    <img src="assets/sd-signature.png" alt="Sashiranka Develogenz" class="doc-header-logo">
+                                    <div class="doc-header-meta">
+                                        <h1 class="doc-header-title">Sashiranka Develogenz</h1>
+                                        <p class="doc-header-tag">Meeting Briefing &amp; Alignment</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="doc-header-cell-right">
+                                <span class="doc-header-badge">INTERNAL / CLIENT</span>
+                                <div class="doc-header-doctype">AGENDA</div>
+                                <div class="doc-header-docnum">05/03/2026</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="doc-body-area">
+                    <div class="border-l-4 border-[#EA3D2A] pl-5 mb-10">
+                        <h3 id="agenda-title" class="text-3xl font-black tracking-tight brand-font text-slate-900 mb-2"
+                            contenteditable="true">Project Kickoff Sync</h3>
+                        <p class="text-xs text-gray-400 uppercase tracking-widest font-bold mb-1">Objective</p>
+                        <p id="agenda-goal" class="text-gray-600" contenteditable="true">Align on milestones, review initial
+                            technical requirements, and establish communication channels.</p>
+                    </div>
+
+                <div class="bg-slate-50 rounded-lg border border-gray-100 overflow-hidden">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-[#0F0E0C] text-white">
+                            <tr>
+                                <th class="py-3 px-6 font-semibold w-24">Time</th>
+                                <th class="py-3 px-6 font-semibold">Discussion Topic</th>
+                                <th class="py-3 px-6 font-semibold w-48">Owner</th>
+                            </tr>
+                        </thead>
+                        <tbody id="agenda-tbody"
+                            class="text-gray-700 divide-y divide-gray-200 transition-opacity duration-500">
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-4 px-6 font-mono text-xs text-gray-500" contenteditable="true">00:00</td>
+                                <td class="py-4 px-6 font-medium text-slate-900" contenteditable="true">Introductions &
+                                    Icebreaker</td>
+                                <td class="py-4 px-6 flex items-center gap-2" contenteditable="true">
+                                    <div
+                                        class="w-6 h-6 rounded-full bg-[#EA3D2A] text-slate-900 flex items-center justify-center text-[10px] font-bold">
+                                        PM</div> Project Manager
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 transition-colors">
+                                <td class="py-4 px-6 font-mono text-xs text-gray-500" contenteditable="true">00:15</td>
+                                <td class="py-4 px-6 font-medium text-slate-900" contenteditable="true">Technical
+                                    Architecture Review</td>
+                                <td class="py-4 px-6 flex items-center gap-2" contenteditable="true">
+                                    <div
+                                        class="w-6 h-6 rounded-full bg-slate-800 text-white flex items-center justify-center text-[10px] font-bold">
+                                        TL</div> Tech Lead
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="print:hidden flex justify-start mt-2">
+                    <button id="btn-add-agenda-row"
+                        class="text-[10px] font-bold text-[#EA3D2A] hover:text-red-700 transition-colors uppercase tracking-widest flex items-center gap-1 bg-cyan-50 px-2 py-1 rounded cursor-pointer">
+                        + Add Agenda Item
+                    </button>
+                </div>
+                </div>
+
+            </div>
+        </section>
+    </main><footer class="studio-footer print:hidden"><img src="assets/sd-signature.png" alt="SD"><div><strong>GOOD WORK DESERVES<br>A GOOD SIGNATURE.</strong><span class="mono">© 2026 SASHIRANKA DEVELOGENZ</span></div><a href="https://sashiranka.me" target="_blank" rel="noopener">SASHIRANKA.ME ↗</a></footer>
+
+    <div id="toast" class="toast z-50">Copied to clipboard!</div>
+
+    <script>
+        const showToast = (message) => {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+        };
+
+        const copyToClipboard = (text, successMessage) => {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.position = "fixed";
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    showToast(successMessage);
+                } else {
+                    showToast("Failed to copy to clipboard.");
+                }
+            } catch (err) {
+                showToast("Error copying to clipboard.");
+            }
+            document.body.removeChild(textArea);
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- Color Copy Logic ---
+            const colorContainers = document.querySelectorAll('.swatch-container');
+            colorContainers.forEach(container => {
+                container.addEventListener('click', () => {
+                    const colorValue = container.getAttribute('data-color');
+                    copyToClipboard(colorValue, colorValue + ' copied to clipboard!');
+                });
+            });
+
+            // --- TAB SWITCHING LOGIC ---
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    tabBtns.forEach(b => b.classList.remove('tab-active'));
+                    btn.classList.add('tab-active');
+                    const targetId = btn.getAttribute('data-target');
+
+                    tabContents.forEach(content => {
+                        if (content.id === targetId) {
+                            content.classList.remove('hide');
+                            content.style.display = '';
+                        } else {
+                            content.classList.add('hide');
+                            content.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            const hashTab = location.hash ? document.querySelector(`.tab-btn[data-target="${location.hash.slice(1)}"]`) : null;
+            const initialTab = hashTab || document.querySelector('.tab-btn.tab-active');
+            if (initialTab) {
+                initialTab.click();
+            }
+
+            // --- ADD NEW ROWS LOGIC ---
+            // Invoice
+            const btnAddInvoiceRow = document.getElementById('btn-add-invoice-row');
+            const invoiceTbody = document.getElementById('invoice-tbody');
+            if (btnAddInvoiceRow && invoiceTbody) {
+                btnAddInvoiceRow.addEventListener('click', () => {
+                    const tr = document.createElement('tr');
+                    tr.className = "border-b border-dashed border-gray-200 hover:bg-gray-50";
+                    tr.innerHTML = `
+                        <td class="py-2.5 pl-2 pr-4 w-1/2 align-top" contenteditable="true">[New Service Description]</td>
+                        <td class="py-2.5 text-center w-1/6 align-top" contenteditable="true">1</td>
+                        <td class="py-2.5 text-right w-1/6 align-top" contenteditable="true">LKR 0.00</td>
+                        <td class="py-2.5 pr-2 text-right text-slate-900 w-1/6 align-top font-semibold" contenteditable="true">LKR 0.00</td>
+                    `;
+                    invoiceTbody.appendChild(tr);
+                });
+            }
+
+            // Proposal
+            const btnAddProposalRow = document.getElementById('btn-add-proposal-row');
+            const propTasksTbody = document.getElementById('prop-tasks-tbody');
+            if (btnAddProposalRow && propTasksTbody) {
+                btnAddProposalRow.addEventListener('click', () => {
+                    const tr = document.createElement('tr');
+                    tr.className = "hover:bg-gray-50 border-b border-gray-100 last:border-0";
+                    tr.innerHTML = `
+                        <td class="py-3 px-3" contenteditable="true">[New Task Description]</td>
+                        <td class="py-3 px-3 text-right font-medium text-slate-900" contenteditable="true">Included</td>
+                    `;
+                    propTasksTbody.appendChild(tr);
+                });
+            }
+
+            // Agreement
+            const btnAddClauseRow = document.getElementById('btn-add-clause-row');
+            const agreementClauses = document.getElementById('agreement-clauses');
+            if (btnAddClauseRow && agreementClauses) {
+                btnAddClauseRow.addEventListener('click', () => {
+                    const num = agreementClauses.querySelectorAll('.clause-block').length + 1;
+                    const div = document.createElement('div');
+                    div.className = "clause-block";
+                    div.innerHTML = `
+                        <h3 class="font-bold text-slate-900 text-base mt-8" contenteditable="true">${num}. [Clause Title]</h3>
+                        <p class="mt-2" contenteditable="true">[Type clause details here...]</p>
+                    `;
+                    agreementClauses.appendChild(div);
+                });
+            }
+
+            // Agenda
+            const btnAddAgendaRow = document.getElementById('btn-add-agenda-row');
+            const agendaTbody = document.getElementById('agenda-tbody');
+            if (btnAddAgendaRow && agendaTbody) {
+                btnAddAgendaRow.addEventListener('click', () => {
+                    const tr = document.createElement('tr');
+                    tr.className = "hover:bg-gray-50 transition-colors";
+                    tr.innerHTML = `
+                        <td class="py-4 px-6 font-mono text-xs text-gray-500" contenteditable="true">00:00</td>
+                        <td class="py-4 px-6 font-medium text-slate-900" contenteditable="true">[New Topic]</td>
+                        <td class="py-4 px-6 flex items-center gap-2" contenteditable="true">
+                            <div class="w-6 h-6 rounded-full bg-gray-300 text-slate-900 flex items-center justify-center text-[10px] font-bold">XX</div> 
+                            [Owner Name]
+                        </td>
+                    `;
+                    agendaTbody.appendChild(tr);
+                });
+            }
+
+            // --- PDF Export Logic ---
+            const downloadPDF = (elementId, filename) => {
+                const element = document.getElementById(elementId);
+                if (!element) return;
+
+                if (typeof html2pdf === 'undefined') { showToast('PDF library unavailable. Use Print to save a PDF.'); return; }
+                if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+                const currentScrollY = window.scrollY;
+                window.scrollTo(0, 0);
+
+                const hideElements = element.querySelectorAll('.print\\:hidden');
+                hideElements.forEach(el => el.style.display = 'none');
+
+                // Optimize document element for exact, clean PDF export
+                element.classList.add('pdf-export-mode');
+
+                const isDarkMode = element.classList.contains('bg-[#0F0E0C]') || element.classList.contains('bg-slate-900');
+                const originalBg = element.style.backgroundColor;
+                element.style.backgroundColor = isDarkMode ? '#0F0E0C' : '#ffffff';
+
+                const opt = {
+                    margin: [0.2, 0.2, 0.2, 0.2],
+                    filename: filename,
+                    image: { type: 'jpeg', quality: 0.98 },
+                    html2canvas: {
+                        scale: 2,
+                        useCORS: true,
+                        logging: false,
+                        scrollY: 0,
+                        scrollX: 0
+                    },
+                    jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
+                    pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+                };
+
+                html2pdf().set(opt).from(element).save().then(() => {
+                    element.classList.remove('pdf-export-mode');
+                    hideElements.forEach(el => el.style.display = '');
+                    element.style.backgroundColor = originalBg;
+                    window.scrollTo(0, currentScrollY);
+                    showToast(`${filename} Exported successfully! 📥`);
+                }).catch(err => {
+                    console.warn("PDF Export Error: ", err);
+                    element.classList.remove('pdf-export-mode');
+                    showToast("Error exporting PDF. Please try again.");
+                    hideElements.forEach(el => el.style.display = '');
+                    element.style.backgroundColor = originalBg;
+                    window.scrollTo(0, currentScrollY);
+                });
+            };
+
+            const handlePdfExport = (e) => {
+                if (e) e.preventDefault();
+                const activeTabBtn = document.querySelector('.tab-btn.tab-active');
+                if (!activeTabBtn) return;
+
+                const targetId = activeTabBtn.getAttribute('data-target');
+                const title = activeTabBtn.textContent.trim().replace(/[^a-z0-9]+/gi, '_').replace(/^_|_$/g, '').toLowerCase();
+                const filename = `SD_${title}.pdf`;
+
+                downloadPDF(targetId, filename);
+            };
+
+            const btnExportDocPdf = document.getElementById('btn-export-doc-pdf');
+            if (btnExportDocPdf) {
+                btnExportDocPdf.addEventListener('click', handlePdfExport);
+            }
+
+            const btnFabExportPdf = document.getElementById('fab-export-pdf');
+            if (btnFabExportPdf) {
+                btnFabExportPdf.addEventListener('click', handlePdfExport);
+                
+            }
+
+            // --- PNG Export Logic for Logos ---
+            const btnDownloadLogos = document.getElementById('btn-download-logos');
+            const logoConceptsCard = document.getElementById('logo-concepts-card');
+
+            if (btnDownloadLogos && logoConceptsCard) {
+                btnDownloadLogos.addEventListener('click', () => {
+                    const originalText = btnDownloadLogos.innerHTML;
+                    btnDownloadLogos.innerHTML = '⏳...';
+                    btnDownloadLogos.style.display = 'none';
+
+                    document.fonts.ready.then(() => {
+                        html2canvas(logoConceptsCard, {
+                            backgroundColor: '#0F0E0C',
+                            scale: 4,
+                            useCORS: true,
+                            logging: false
+                        }).then(canvas => {
+                            btnDownloadLogos.style.display = '';
+                            btnDownloadLogos.innerHTML = originalText;
+
+                            const link = document.createElement('a');
+                            link.download = 'SD_Signature_Card.png';
+                            link.href = canvas.toDataURL('image/png', 1.0);
+                            link.click();
+                            showToast("Logos downloaded! 📥");
+                        }).catch(err => {
+                            console.warn("Error downloading image", err);
+                            btnDownloadLogos.style.display = '';
+                            btnDownloadLogos.innerHTML = originalText;
+                            showToast("Error downloading image. Please try again.");
+                        });
+                    });
+                });
+            }
+
+            // --- PNG Export Logic for Social Avatar ---
+            const btnDownloadAvatar = document.getElementById('btn-download-avatar');
+            const socialAvatarCard = document.getElementById('social-avatar-card');
+
+            if (btnDownloadAvatar && socialAvatarCard) {
+                btnDownloadAvatar.addEventListener('click', () => {
+                    const originalText = btnDownloadAvatar.innerHTML;
+                    btnDownloadAvatar.innerHTML = '⏳...';
+
+                    document.fonts.ready.then(() => {
+                        html2canvas(socialAvatarCard, {
+                            backgroundColor: null,
+                            scale: 4,
+                            useCORS: true,
+                            logging: false
+                        }).then(canvas => {
+                            btnDownloadAvatar.innerHTML = originalText;
+                            const link = document.createElement('a');
+                            link.download = 'SD_Social_Avatar.png';
+                            link.href = canvas.toDataURL('image/png', 1.0);
+                            link.click();
+                            showToast("Avatar downloaded! 📥");
+                        }).catch(err => {
+                            console.warn("Avatar Export Error: ", err);
+                            btnDownloadAvatar.innerHTML = originalText;
+                            showToast("Error downloading image.");
+                        });
+                    });
+                });
+            }
+
+            // --- PNG Export Logic for Social Cover ---
+            const btnDownloadCover = document.getElementById('btn-download-cover');
+            const socialCoverCard = document.getElementById('social-cover-card');
+
+            if (btnDownloadCover && socialCoverCard) {
+                btnDownloadCover.addEventListener('click', () => {
+                    const originalText = btnDownloadCover.innerHTML;
+                    btnDownloadCover.innerHTML = '⏳...';
+
+                    document.fonts.ready.then(() => {
+                        html2canvas(socialCoverCard, {
+                            backgroundColor: '#0F0E0C',
+                            scale: 4,
+                            useCORS: true,
+                            logging: false
+                        }).then(canvas => {
+                            btnDownloadCover.innerHTML = originalText;
+                            const link = document.createElement('a');
+                            link.download = 'SD_Social_Cover.png';
+                            link.href = canvas.toDataURL('image/png', 1.0);
+                            link.click();
+                            showToast("Cover banner downloaded! 📥");
+                        }).catch(err => {
+                            console.warn("Cover Export Error: ", err);
+                            btnDownloadCover.innerHTML = originalText;
+                            showToast("Error downloading image.");
+                        });
+                    });
+                });
+            }
+
+            // --- Initialize Static Portfolio Chart ---
+            const ctx = document.getElementById('portfolioChart').getContext('2d');
+            if (typeof Chart !== 'undefined') new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Software Dev', 'Web Dev', 'Consulting'],
+                    datasets: [{
+                        data: [45, 35, 20],
+                        backgroundColor: [
+                            '#0F0E0C',
+                            '#EA3D2A',
+                            '#8F887B'
+                        ],
+                        borderWidth: 0,
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '70%',
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                font: {
+                                    family: "'Inter', sans-serif",
+                                    size: 14
+                                },
+                                color: '#475569',
+                                padding: 20,
+                                usePointStyle: true,
+                                pointStyle: 'rectRounded'
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: '#0F0E0C',
+                            titleFont: { family: "'Archivo', sans-serif", size: 14 },
+                            bodyFont: { family: "'Inter', sans-serif", size: 14 },
+                            padding: 12,
+                            cornerRadius: 4,
+                            callbacks: {
+                                label: function (context) {
+                                    return ' ' + context.label + ': ' + context.parsed + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+<script src="sig-data.js"></script>
+<script src="studio.js"></script>
+<script src="scene3d.js"></script>
+</body>
+
+</html>
+
+
