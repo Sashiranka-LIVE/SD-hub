@@ -217,6 +217,27 @@
   padding: 22px 36px 22px 0 !important;
 }
 
+/* Home-only hero image and scroll exit transition */
+.studio-hero {
+  transform-origin: 50% 0%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+.studio-hero .hero-art {
+  will-change: transform;
+  filter: saturate(.92) contrast(1.03);
+}
+@media (prefers-reduced-motion: reduce) {
+  .studio-hero {
+    transform: none !important;
+    will-change: auto;
+  }
+  .studio-hero .hero-art {
+    will-change: auto;
+  }
+}
+
 
 
 /* ===== 3D scroll tour (#scene) ===== */

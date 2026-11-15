@@ -130,7 +130,9 @@
       hraf = 0;
       hx += (thx - hx) * 0.08; hy += (thy - hy) * 0.08;
       const sy = Math.min(window.scrollY, hero.offsetHeight) * 0.18;
-      if (art) art.style.transform = `translate3d(${(-hx * 22).toFixed(1)}px,${(-hy * 14 + sy).toFixed(1)}px,0) scale(1.07)`;
+      const exit = reduceMq.matches ? 0 : clamp((navH() - hero.getBoundingClientRect().bottom) / hero.offsetHeight, 0, 1);
+      hero.style.transform = `perspective(1400px) rotateX(${(-exit * 9).toFixed(2)}deg) translate3d(0,${(-exit * 18).toFixed(1)}px,${(-exit * 55).toFixed(1)}px) scale(${(1 - exit * 0.045).toFixed(4)})`;
+      if (art) art.style.transform = `translate3d(${(-hx * 22).toFixed(1)}px,${(-hy * 14 + sy).toFixed(1)}px,0) rotateY(${(hx * 2.4).toFixed(2)}deg) rotateX(${(-hy * 1.4).toFixed(2)}deg) scale(1.07)`;
       if (content) content.style.transform = `translate3d(${(hx * 10).toFixed(1)}px,${(hy * 6 - sy * 0.35).toFixed(1)}px,0)`;
       if (note) note.style.transform = `translate3d(${(hx * 16).toFixed(1)}px,${(hy * 10).toFixed(1)}px,0)`;
       if (Math.abs(thx - hx) > 0.002 || Math.abs(thy - hy) > 0.002) hraf = requestAnimationFrame(heroTick);
